@@ -1162,7 +1162,13 @@ section {
     }
 
     .contact-wrapper {
+        grid-template-columns: 1fr;
         padding: 2rem;
+        gap: 2rem;
+    }
+
+    .contact-info h2 {
+        font-size: 2rem;
     }
 
     section {
@@ -1193,6 +1199,39 @@ section {
 
     .gallery-grid {
         grid-template-columns: 1fr;
+    }
+
+    .gallery-large,
+    .gallery-wide {
+        grid-column: span 1;
+    }
+
+    .contact-wrapper {
+        padding: 1.5rem;
+    }
+
+    .contact-info h2 {
+        font-size: 1.75rem;
+    }
+
+    .modal-content {
+        width: 95%;
+        max-height: 90vh;
+    }
+
+    .modal-header {
+        padding: 2rem 1.5rem 1.5rem;
+    }
+
+    .modal-body {
+        padding: 1.5rem;
+    }
+
+    .modal-close {
+        top: 1rem;
+        margin: 1rem 1rem 0 0;
+        width: 36px;
+        height: 36px;
     }
 
     .gallery-large,
@@ -1287,9 +1326,10 @@ section {
 }
 
 .modal-close {
-    position: absolute;
+    position: sticky;
     top: 1.5rem;
-    right: 1.5rem;
+    float: right;
+    margin: 1.5rem 1.5rem 0 0;
     background: var(--glass-bg);
     border: 1px solid var(--glass-border);
     border-radius: 50%;
@@ -1301,7 +1341,7 @@ section {
     cursor: pointer;
     color: var(--text-primary);
     transition: all 0.3s ease;
-    z-index: 2;
+    z-index: 10000;
 }
 
 .modal-close:hover {
