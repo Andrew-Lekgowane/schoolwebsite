@@ -1,6 +1,6 @@
-# 🎓 Excellence Academy - Modern School Website
+# 🎓 Calvin Private School - Modern School Website
 
-A stunning, competition-winning school website built with pure HTML, CSS, and JavaScript. Features cutting-edge design, smooth animations, and an immersive user experience.
+A stunning, competition-winning private school website built with pure HTML, CSS, and JavaScript. Features cutting-edge design, smooth animations, interactive news modals, and an immersive user experience.
 
 ## ✨ Features
 
@@ -16,14 +16,21 @@ A stunning, competition-winning school website built with pure HTML, CSS, and Ja
 - **Mobile Navigation** - Smooth hamburger menu for mobile devices
 - **Contact Form** - Interactive form with success notifications
 - **Ripple Effects** - Material Design-inspired button interactions
+- **News Modals** - Click "Read More" on any news article to view full content
+- **Program Modals** - Interactive program details with enrollment options
+- **FAQ Accordion** - Expandable frequently asked questions
 
 ### 📱 Sections Included
 1. **Hero Section** - Eye-catching landing with animated stats
 2. **About Section** - School highlights with icon cards
-3. **Programs Section** - Showcase of academic programs
-4. **Achievements Section** - Display of school accomplishments
-5. **Contact Section** - Interactive contact form and information
-6. **Footer** - Complete with navigation and social links
+3. **Programs Section** - Interactive modal showcases for AP, STEM, Arts, and Athletics
+4. **Achievements Section** - Display of school accomplishments with statistics
+5. **Gallery Section** - Beautiful masonry-style photo gallery
+6. **Testimonials Section** - Student, parent, and alumni testimonials with African names
+7. **News Section** - Latest announcements with full article modals
+8. **FAQ Section** - Expandable accordion for common questions
+9. **Contact Section** - Interactive contact form and school information
+10. **Footer** - Complete with navigation and social links
 
 ## 🎯 Why This Will Win
 
@@ -100,7 +107,7 @@ SchoolWebsite/
 ### Change School Name
 Edit in `index.html`:
 ```html
-<span>Excellence Academy</span>
+<span>Calvin Private School</span>
 ```
 
 ### Update Colors
@@ -145,6 +152,25 @@ The hamburger menu provides smooth navigation on mobile devices.
 ### 5. Form Validation
 The contact form includes validation and shows a beautiful success message.
 
+### 6. Interactive News Modals
+Click any "Read More" link in the news section to open a full article with detailed content, including:
+- Science Olympiad victory details
+- College fair information
+- STEM lab opening ceremony
+- Drama club Hamilton production
+- Parent-teacher conferences
+- Student art exhibition
+
+### 7. Program Detail Modals
+Click on any academic program card to view comprehensive information about:
+- AP Courses & College Prep
+- STEM & Innovation programs
+- Arts & Music opportunities
+- Athletics & Sports teams
+
+### 8. Cultural Representation
+Features authentic African names throughout testimonials and news articles, reflecting diversity and inclusion.
+
 ## 🏆 Competition Tips
 
 1. **Present with Confidence** - Explain the modern design choices
@@ -186,9 +212,13 @@ This project is free to use for educational purposes. Feel free to customize and
 
 ## 🌟 Credits
 
-**Design & Development**: Created for Excellence Academy
+**Design & Development**: Created for Calvin Private School
+**School Type**: Private Educational Institution
+**Location**: 456 Excellence Avenue, Springfield, IL 62701
+**Contact**: info@calvinprivate.edu | (217) 555-0100
 **Fonts**: Google Fonts (Inter & Poppins)
 **Icons**: Custom SVG graphics
+**Images**: Unsplash (educational stock photos)
 
 ---
 
