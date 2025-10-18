@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calvin Private School - Excellence in Education</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20 5L35 12.5V27.5C35 32.5 28 37 20 37C12 37 5 32.5 5 27.5V12.5L20 5Z" fill="url(#gradient1)"/>
+                    <path d="M20 15L28 19V27C28 29 25 31 20 31C15 31 12 29 12 27V19L20 15Z" fill="white" opacity="0.9"/>
+                    <defs>
+                        <linearGradient id="gradient1" x1="5" y1="5" x2="35" y2="37">
+                            <stop offset="0%" stop-color="#667eea"/>
+                            <stop offset="100%" stop-color="#764ba2"/>
+                        </linearGradient>
+                    </defs>
+                </svg>
+                <span>Calvin Private School</span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#programs" class="nav-link">Programs</a></li>
+                <li><a href="#achievements" class="nav-link">Achievements</a></li>
+                <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero" id="home">
+        <div class="hero-background">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    Welcome to <span class="text-gradient">Calvin Private School</span>
+                </h1>
+                <p class="hero-subtitle">Building Futures One Student at a Time</p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="scrollToSection('contact')">
+                        <span>Enroll Now</span>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <button class="btn btn-secondary" onclick="scrollToSection('about')">
+                        <span>Learn More</span>
+                    </button>
+                </div>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-card">
+                    <div class="stat-number" data-target="1200">0</div>
+                    <div class="stat-label">Students</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-target="95">0</div>
+                    <div class="stat-label">Graduation Rate</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-target="75">0</div>
+                    <div class="stat-label">Dedicated Teachers</div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse"></div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">About Us</span>
+                <h2 class="section-title">A Legacy of Excellence Since 1985</h2>
+                <p class="section-subtitle">Calvin Private School has been serving our community with quality private education for nearly four decades</p>
+            </div>
+            <div class="about-content">
+                <div class="about-grid">
+                    <div class="about-card">
+                        <div class="card-icon">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                                <path d="M24 44C35.0457 44 44 35.0457 44 24C44 12.9543 35.0457 4 24 4C12.9543 4 4 12.9543 4 24C4 35.0457 12.9543 44 24 44Z" stroke="url(#gradient2)" stroke-width="3" stroke-linecap="round"/>
+                                <path d="M24 16V24L30 30" stroke="url(#gradient2)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                <defs>
+                                    <linearGradient id="gradient2" x1="4" y1="4" x2="44" y2="44">
+                                        <stop offset="0%" stop-color="#667eea"/>
+                                        <stop offset="100%" stop-color="#764ba2"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <h3>Nearly 40 Years Strong</h3>
+                        <p>Serving our community since 1985 with quality public education and student-centered learning</p>
+                    </div>
+                    <div class="about-card">
+                        <div class="card-icon">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                                <path d="M24 4L6 14L24 24L42 14L24 4Z" stroke="url(#gradient3)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M6 34L24 44L42 34" stroke="url(#gradient3)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M6 24L24 34L42 24" stroke="url(#gradient3)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                <defs>
+                                    <linearGradient id="gradient3" x1="6" y1="4" x2="42" y2="44">
+                                        <stop offset="0%" stop-color="#667eea"/>
+                                        <stop offset="100%" stop-color="#764ba2"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <h3>State-Approved Curriculum</h3>
+                        <p>Comprehensive programs meeting state standards while fostering creativity and critical thinking</p>
+                    </div>
+                    <div class="about-card">
+                        <div class="card-icon">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                                <path d="M24 28C28.4183 28 32 24.4183 32 20C32 15.5817 28.4183 12 24 12C19.5817 12 16 15.5817 16 20C16 24.4183 19.5817 28 24 28Z" stroke="url(#gradient4)" stroke-width="3"/>
+                                <path d="M8 40C8 33.3726 13.3726 28 20 28H28C34.6274 28 40 33.3726 40 40" stroke="url(#gradient4)" stroke-width="3" stroke-linecap="round"/>
+                                <defs>
+                                    <linearGradient id="gradient4" x1="8" y1="12" x2="40" y2="40">
+                                        <stop offset="0%" stop-color="#667eea"/>
+                                        <stop offset="100%" stop-color="#764ba2"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <h3>Certified Teachers</h3>
+                        <p>Highly qualified, state-certified educators dedicated to student success and growth</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="programs" id="programs">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Our Programs</span>
+                <h2 class="section-title">Academic Programs & Pathways</h2>
+                <p class="section-subtitle">Explore our comprehensive programs designed to prepare you for college and career success</p>
+            </div>
+            <div class="programs-grid">
+                <div class="program-card">
+                    <div class="program-image">
+                        <div class="program-overlay"></div>
+                        <div class="program-icon">🎨</div>
+                    </div>
+                    <div class="program-content">
+                        <h3>Arts & Humanities</h3>
+                        <p>Express yourself through visual arts, performing arts, and creative writing programs</p>
+                        <ul class="program-features">
+                            <li>Visual Arts & Drawing</li>
+                            <li>Band & Choir</li>
+                            <li>Drama & Theater</li>
+                        </ul>
+                        <button class="btn-link" data-program="arts">Explore Program →</button>
+                    </div>
+                </div>
+                <div class="program-card">
+                    <div class="program-image">
+                        <div class="program-overlay"></div>
+                        <div class="program-icon">💻</div>
+                    </div>
+                    <div class="program-content">
+                        <h3>STEM Programs</h3>
+                        <p>Prepare for careers in science, technology, engineering, and mathematics</p>
+                        <ul class="program-features">
+                            <li>Computer Science</li>
+                            <li>Engineering & Robotics</li>
+                            <li>Advanced Mathematics</li>
+                        </ul>
+                        <button class="btn-link" data-program="tech">Explore Program →</button>
+                    </div>
+                </div>
+                <div class="program-card">
+                    <div class="program-image">
+                        <div class="program-overlay"></div>
+                        <div class="program-icon">🔬</div>
+                    </div>
+                    <div class="program-content">
+                        <h3>College Prep & AP Courses</h3>
+                        <p>Challenge yourself with Advanced Placement courses and college-level curriculum</p>
+                        <ul class="program-features">
+                            <li>AP Sciences & Math</li>
+                            <li>AP English & History</li>
+                            <li>Honors Programs</li>
+                        </ul>
+                        <button class="btn-link" data-program="science">Explore Program →</button>
+                    </div>
+                </div>
+                <div class="program-card">
+                    <div class="program-image">
+                        <div class="program-overlay"></div>
+                        <div class="program-icon">⚽</div>
+                    </div>
+                    <div class="program-content">
+                        <h3>Athletics & Activities</h3>
+                        <p>Build character and teamwork through our competitive sports and extracurricular programs</p>
+                        <ul class="program-features">
+                            <li>Varsity Sports Teams</li>
+                            <li>Student Clubs & Organizations</li>
+                            <li>Physical Education</li>
+                        </ul>
+                        <button class="btn-link" data-program="sports">Explore Program →</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="achievements" id="achievements">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Achievements</span>
+                <h2 class="section-title">Our Success Stories</h2>
+                <p class="section-subtitle">Celebrating excellence and inspiring greatness</p>
+            </div>
+            <div class="achievements-grid">
+                <div class="achievement-card">
+                    <div class="achievement-icon">🏆</div>
+                    <h3>State Champions</h3>
+                    <p>Multiple state championships in academics and athletics</p>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon">🎓</div>
+                    <h3>85% College Enrollment</h3>
+                    <p>Majority of graduates continue to higher education</p>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon">🌟</div>
+                    <h3>Blue Ribbon School</h3>
+                    <p>Recognized for academic excellence and achievement</p>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon">🎯</div>
+                    <h3>Outstanding Test Scores</h3>
+                    <p>Above state average in standardized testing</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Campus Life</span>
+                <h2 class="section-title">Experience Calvin Private School</h2>
+                <p class="section-subtitle">A glimpse into our vibrant community and daily school life</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item gallery-large">
+                    <div class="gallery-image">
+                        <img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=800&h=600&fit=crop" alt="Students in Modern Library" loading="lazy">
+                    </div>
+                    <div class="gallery-caption">
+                        <h3>State-of-the-Art Learning Spaces</h3>
+                        <p>Our modern facilities provide the perfect environment for academic excellence</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-image">
+                        <img src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=800&h=600&fit=crop" alt="Science Lab Experiments" loading="lazy">
+                    </div>
+                    <div class="gallery-caption">
+                        <h3>Hands-On Learning</h3>
+                        <p>Students engage in real-world experiments</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-image">
+                        <img src="https://images.unsplash.com/photo-1546519638-68e109498ffc?w=800&h=600&fit=crop" alt="Basketball Game Action" loading="lazy">
+                    </div>
+                    <div class="gallery-caption">
+                        <h3>Athletic Excellence</h3>
+                        <p>Our teams compete at the highest level</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-image">
+                        <img src="https://images.unsplash.com/photo-1503095396549-807759245b35?w=800&h=600&fit=crop" alt="Theater Performance" loading="lazy">
+                    </div>
+                    <div class="gallery-caption">
+                        <h3>Arts & Drama</h3>
+                        <p>Students shine on stage in our productions</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-image">
+                        <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=800&h=600&fit=crop" alt="Computer Lab Session" loading="lazy">
+                    </div>
+                    <div class="gallery-caption">
+                        <h3>Technology Integration</h3>
+                        <p>Preparing students for the digital future</p>
+                    </div>
+                </div>
+                <div class="gallery-item gallery-wide">
+                    <div class="gallery-image">
+                        <img src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=800&h=600&fit=crop" alt="Graduation Ceremony" loading="lazy" onerror="this.style.display='none'; this.parentElement.innerHTML='<div class=\'gallery-placeholder\'><div class=\'placeholder-icon\'>🎓</div><p>Graduation Ceremony</p></div>';">
+                    </div>
+                    <div class="gallery-caption">
+                        <h3>Celebrating Success</h3>
+                        <p>Annual graduation ceremony celebrating our seniors' achievements</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-image">
+                        <img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=800&h=600&fit=crop" alt="Art Class in Progress" loading="lazy">
+                    </div>
+                    <div class="gallery-caption">
+                        <h3>Creative Expression</h3>
+                        <p>Students develop their artistic talents</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-image">
+                        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800&h=600&fit=crop" alt="Student Collaboration" loading="lazy">
+                    </div>
+                    <div class="gallery-caption">
+                        <h3>Teamwork & Leadership</h3>
+                        <p>Building skills for tomorrow's leaders</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Testimonials</span>
+                <h2 class="section-title">What Our Community Says</h2>
+                <p class="section-subtitle">Hear from students, parents, and alumni about their Calvin Private School experience</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-quote">"</div>
+                    <p class="testimonial-text">Calvin Private School has been instrumental in my academic growth. The teachers genuinely care about each student's success and go above and beyond to help us achieve our goals.</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">👨‍🎓</div>
+                        <div class="author-info">
+                            <h4>Thabo Mabaso</h4>
+                            <p>Senior Student, Class of 2024</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-quote">"</div>
+                    <p class="testimonial-text">As a parent, I couldn't be happier with the education and support my daughter receives. The staff is professional, caring, and truly invested in student success.</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">👩</div>
+                        <div class="author-info">
+                            <h4>Nomsa Dlamini</h4>
+                            <p>Parent of Sophomore Student</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-quote">"</div>
+                    <p class="testimonial-text">The AP program at Calvin Private School prepared me perfectly for college. I'm now at a top university and feel well-equipped thanks to the rigorous curriculum and dedicated teachers.</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">👩‍🎓</div>
+                        <div class="author-info">
+                            <h4>Amara Okafor</h4>
+                            <p>Alumni, Class of 2023</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-quote">"</div>
+                    <p class="testimonial-text">The extracurricular activities and sports programs are outstanding. I've made lifelong friends and learned valuable leadership skills through student government.</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">👨‍🎓</div>
+                        <div class="author-info">
+                            <h4>Kwame Mensah</h4>
+                            <p>Junior Student, Student Body President</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="news" id="news">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Latest Updates</span>
+                <h2 class="section-title">News & Announcements</h2>
+                <p class="section-subtitle">Stay informed about what's happening at Calvin Private School</p>
+            </div>
+            <div class="news-grid">
+                <div class="news-card featured">
+                    <div class="news-badge">Featured</div>
+                    <div class="news-date">October 15, 2024</div>
+                    <h3>Calvin Private School Wins State Science Olympiad</h3>
+                    <p>Our talented science team brought home the gold medal at the State Science Olympiad, competing against 50+ schools. Congratulations to all participants!</p>
+                    <a href="#" class="news-link" data-news="olympiad">Read More →</a>
+                </div>
+                <div class="news-card">
+                    <div class="news-date">October 12, 2024</div>
+                    <h3>Fall College Fair This Friday</h3>
+                    <p>Representatives from 30+ colleges will be on campus this Friday from 2-5 PM. All juniors and seniors are encouraged to attend.</p>
+                    <a href="#" class="news-link" data-news="college-fair">Read More →</a>
+                </div>
+                <div class="news-card">
+                    <div class="news-date">October 10, 2024</div>
+                    <h3>New STEM Lab Opening Ceremony</h3>
+                    <p>Join us for the grand opening of our state-of-the-art STEM laboratory, featuring cutting-edge equipment and technology.</p>
+                    <a href="#" class="news-link" data-news="stem-lab">Read More →</a>
+                </div>
+                <div class="news-card">
+                    <div class="news-date">October 8, 2024</div>
+                    <h3>Drama Club Presents "Hamilton"</h3>
+                    <p>Don't miss our fall production! Shows run November 15-17 in the main auditorium. Tickets available at the door.</p>
+                    <a href="#" class="news-link" data-news="hamilton">Read More →</a>
+                </div>
+                <div class="news-card">
+                    <div class="news-date">October 5, 2024</div>
+                    <h3>Parent-Teacher Conferences</h3>
+                    <p>Schedule your conference appointments online. Conferences will be held October 25-26 from 4-8 PM.</p>
+                    <a href="#" class="news-link" data-news="conferences">Read More →</a>
+                </div>
+                <div class="news-card">
+                    <div class="news-date">October 1, 2024</div>
+                    <h3>Student Art Exhibition Opens</h3>
+                    <p>View amazing artwork from our talented students in the main hallway gallery. Exhibition runs through October 31.</p>
+                    <a href="#" class="news-link" data-news="art-exhibition">Read More →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq" id="faq">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">FAQ</span>
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <p class="section-subtitle">Find answers to common questions about Calvin Private School</p>
+            </div>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>How do I enroll my child at Calvin Private School?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Enrollment is open to all students in our district. Visit our office with proof of residency, birth certificate, immunization records, and previous school transcripts. You can also start the process online through our contact form.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>What AP courses are offered?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We offer 15+ AP courses including AP Biology, Chemistry, Physics, Calculus AB/BC, Statistics, English Language & Literature, US History, World History, Government, Spanish, French, Computer Science, and Art History.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>What are the school hours?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Regular school hours are 8:00 AM to 3:15 PM, Monday through Friday. Early bird classes start at 7:00 AM, and after-school activities run until 5:30 PM.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Does the school provide transportation?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes, we provide free bus transportation for students living more than 1.5 miles from school. Bus routes and schedules are available on our website and in the main office.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>What extracurricular activities are available?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We offer 50+ clubs and organizations including student government, debate team, robotics, drama, band, choir, various sports teams, National Honor Society, and many special interest clubs. There's something for everyone!</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>How can I stay updated on school events?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Follow us on social media, check our website regularly, sign up for our email newsletter, and download our mobile app for real-time notifications about events, closures, and important announcements.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>What support services are available for students?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We provide comprehensive support including academic counseling, college counseling, tutoring services, special education services, ESL programs, mental health counseling, and career guidance.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Is there a dress code?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes, we have a reasonable dress code that promotes a positive learning environment. Clothing must be appropriate for school, free from offensive language or images, and meet basic modesty standards. Full details are in the student handbook.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h2>Contact Us</h2>
+                    <p>Have questions about enrollment or programs? We're here to help!</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">📍</div>
+                            <div>
+                                <h4>Visit Us</h4>
+                                <p>456 Excellence Avenue, Springfield, IL 62701</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">📧</div>
+                            <div>
+                                <h4>Email Us</h4>
+                                <p>info@calvinprivate.edu</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">📞</div>
+                            <div>
+                                <h4>Call Us</h4>
+                                <p>(217) 555-0100</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" placeholder="Phone Number">
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" rows="4" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <span>Send Message</span>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M18 2L9 11M18 2L12 18L9 11M18 2L2 8L9 11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 5L35 12.5V27.5C35 32.5 28 37 20 37C12 37 5 32.5 5 27.5V12.5L20 5Z" fill="url(#gradient5)"/>
+                            <path d="M20 15L28 19V27C28 29 25 31 20 31C15 31 12 29 12 27V19L20 15Z" fill="white" opacity="0.9"/>
+                            <defs>
+                                <linearGradient id="gradient5" x1="5" y1="5" x2="35" y2="37">
+                                    <stop offset="0%" stop-color="#667eea"/>
+                                    <stop offset="100%" stop-color="#764ba2"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        <span>Calvin Private School</span>
+                    </div>
+                    <p>A proud tradition of academic excellence, community partnership, and student success since 1985.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#programs">Programs</a></li>
+                        <li><a href="#achievements">Achievements</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Facebook</a>
+                        <a href="#" class="social-link">Twitter</a>
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Calvin Private School. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal" id="programModal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M18 6L6 18M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </button>
+            <div class="modal-header">
+                <div class="modal-icon" id="modalIcon">🎨</div>
+                <h2 id="modalTitle">Program Title</h2>
+            </div>
+            <div class="modal-body" id="modalBody">
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary" id="modalEnrollBtn">
+                    <span>Enroll Now</span>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="newsModal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="newsModalClose">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M18 6L6 18M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </button>
+            <div class="modal-header">
+                <div class="modal-icon" id="newsModalIcon">📰</div>
+                <h2 id="newsModalTitle">News Title</h2>
+            </div>
+            <div class="modal-body" id="newsModalBody">
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
